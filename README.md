@@ -1,5 +1,7 @@
 # ae_SVG
-Python-based assets for importing/exporting SVG files in Houdini
+Python-based assets for importing and exporting SVG files in Houdini
+
+![Hi](TestImage.png)
 
 # Importer
 A digital asset which can load SVG files into SOPs.
@@ -15,4 +17,5 @@ Current Limitations:
 
 # Exporter
 A digital asset which can save the contents of a Houdini scene to SVG format
-- Early prototype
+- A work-in-progress which is currently limited to polygons and polylines. Usable but not guaranteed stable.
+- 2 digital assets: SVG_Export and SVG_ProcessAndExport. The latter performs geometry cleanup, camera projection and culling before as well as exports. 
