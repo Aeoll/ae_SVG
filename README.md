@@ -3,6 +3,15 @@ Python-based assets for importing and exporting SVG files in Houdini
 
 ![Hi](TestImage.png)
 
+# Installation
+The importer uses the svg.path library - https://pypi.python.org/pypi/svg.path
+To ensure Houdini has access to this library:
+- Install Python2.7
+- Install pip, the python package manager - https://bootstrap.pypa.io/get-pip.py
+- Run 'pip install svg.path' which will install svg.path into Python27\Lib\site-packages
+- **Create an empty \_\_init\_\_.py file inside the svg/ directory of the svg/path installation**
+- In your houdini.env file, append the site-packages directory to the python search path, e.g `PYTHONPATH = &;C:\Python27\Lib\site-packages`
+
 # Importer
 A digital asset which can load SVG files into SOPs.
 Features:
