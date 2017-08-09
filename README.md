@@ -13,7 +13,8 @@ To ensure Houdini has access to this library:
 - ~~In your houdini.env file, append the site-packages directory to the python search path, e.g `PYTHONPATH = &;C:\Python27\Lib\site-packages`~~
 - Setting PYTHONPATH in the houdini.env file apparently breaks some python modules that come with Houdini. The workaround is to add
 ```import sys
-sys.append("C:\Python27\Lib\site-packages")```
+sys.append("C:\Python27\Lib\site-packages")
+```
 to the startup scripts (123 and 456.py) or just type these lines into the python shell when you need the SVG Loader. I'm aiming to find a better solution
 
 # Importer
