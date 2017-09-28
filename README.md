@@ -8,15 +8,11 @@ The importer uses the svg.path library - https://pypi.python.org/pypi/svg.path
 To ensure Houdini has access to this library:
 - Install Python2.7
 - Install pip, the python package manager - https://bootstrap.pypa.io/get-pip.py
-- Run 'pip install svg.path' which will install svg.path into Python27\Lib\site-packages
+~~- Run 'pip install svg.path' which will install svg.path into Python27\Lib\site-packages~~
+- Run 'pip install svg.path --target [path/to/houdini/home/python2.7libs] ' which will install svg.path into the Houdini custom python library director (e.g C:/Users/User/Documents/houdini16.0/python2.7libs )
 - **Create an empty \_\_init\_\_.py file inside the svg/ directory of the svg/path installation**
 - ~~In your houdini.env file, append the site-packages directory to the python search path, e.g `PYTHONPATH = &;C:\Python27\Lib\site-packages`~~
-- Setting PYTHONPATH in the houdini.env file apparently breaks some python modules that come with Houdini. The workaround is to add
-```
-import sys
-sys.append("C:\Python27\Lib\site-packages")
-```
-to the startup scripts (123 and 456.py) or just type these lines into the python shell when you need the SVG Loader. I'm aiming to find a better solution
+~~- Setting PYTHONPATH in the houdini.env file apparently breaks some python modules that come with Houdini.~~
 
 # Importer
 A digital asset which can load SVG files into SOPs.
