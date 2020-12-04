@@ -3,3 +3,10 @@ otls/backup
 
 # backup files
 *_bak*.hip
+
+# compiled python files
+*.pyc
+
+.vs
+.DS_Store
+Thumbs.db

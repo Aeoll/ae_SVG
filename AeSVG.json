@@ -1,0 +1,10 @@
+{
+	"env": [
+        {
+			"AESVG": "PATH/TO/AE_SVG"
+        }
+	],
+	"path": [
+        "$AESVG"
+    ]
+}
