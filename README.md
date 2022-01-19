@@ -9,7 +9,7 @@ These SVG tools are included in Aelib (https://github.com/Aeoll/Aelib) - my larg
 
 If you would like to install just these 2 HDAs:
 * Download and extract the repository and move it to any location
-* Create a folder called 'packages' in your Houdini home directory (e.g C:/Users/MY_USER/Documents/houdini18.0) if it does not exist already
+* Create a folder called 'packages' in your Houdini home directory (e.g C:/Users/MY_USER/Documents/houdini19.0) if it does not exist already
 * Copy the AeSVG.json file into the packages folder
 * Edit the json file to point to the ae_SVG parent directory (edit the "AESVG" line)
 * For more information on how package files work, see [HERE](https://www.sidefx.com/docs/houdini/ref/plugins.html)
